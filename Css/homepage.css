@@ -1,0 +1,74 @@
+body {
+  background-color: grey;
+}
+/*flexbox*/
+.box {
+  display: flex;
+
+  border: 10px outset yellow;
+
+  align-items: center;
+  justify-content: center;
+  height: 80%;
+  width: 500px;
+  padding: 30px;
+  border-radius: 50px 20px;
+}
+
+/*grid*/
+.container {
+  display: grid;
+  width: 100%;
+  margin: auto;
+  grid-template-rows: 400px 400px 400px 400px;
+  grid-gap: 20px;
+  grid-template-areas: "top top";
+}
+
+#one {
+  order: 1;
+}
+
+#two {
+  order: 2;
+}
+#three {
+  order: 3;
+}
+
+#four {
+  order: 4;
+}
+
+p {
+  text-align: justify;
+  letter-spacing: 3px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: black;
+  font-size: 20px;
+}
+
+figure {
+  margin: auto;
+}
+
+figcaption {
+  background-color: black;
+  color: white;
+  font-style: inherit;
+  padding: 1px;
+  text-align: center;
+}
+
+button {
+  background-color: blue;
+  border: none;
+  color: brown;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}

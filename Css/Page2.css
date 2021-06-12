@@ -1,0 +1,143 @@
+body{
+    font-family: Verdana , Calibri ,sans-serif;
+    margin: 0px;
+    padding: 0px;
+    background-color: salmon;
+    /*added Image zu dem Body*/
+    background-image: url("ecommerce.jpg");
+   background-repeat: no-repeat;
+    background-size: 1400px 1200px;
+}
+nav{
+    width:100%;
+    background-color:#424558;
+}
+/*Selects all <ul>elements where the parent is nav element*/
+nav > ul{
+    margin: 0px;
+    padding: 0px;
+
+}
+/*selects all <li> elements inside the <nav> elments*/
+nav li{
+    list-style-type: none;
+}
+/*Selects all <ul>elements where the parent is nav element and <li> elements where the parents is <ul>*/
+nav > ul > li{
+    float: left;
+    position: relative;
+}
+/*Selects all <ul>elements where the parent is nav element  and insert this code after <ul>*/
+nav > ul::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+.submenu{
+    display: none;
+}
+
+nav input[type=checkbox] {
+    display: none;
+}
+/*selects all <label> elements inside the <nav> elments*/
+nav label{
+    display:none;
+}
+/*selects all <a> elements inside the <nav> elments*/
+nav a{
+    display: inline-block;
+    text-decoration: none;
+}
+nav > ul > li > a {
+    padding: 20px 30px;
+    color: #fff;
+}
+nav > ul > li:hover a{
+padding: 15px 30px 20px 30px;
+}
+
+/*selects all <li> elements inside the <nav> elments and s  selects links  on mouse over with class"submenu" */
+nav li:hover .submenu{
+    display: inline-block;
+    position: absolute;
+    top:100%;
+    left:0px;
+    padding: 0px;
+    z-index: 1000;
+}
+
+.submenu li a{
+    padding: 15px 30px;
+    font-size: 13px;
+    color:mediumblue;
+    width:270px; 
+}
+.submenu li{
+    border-bottom: 1px solid #ccc;
+}
+.menu-html:hover{
+    border-top: 5px solid #e44d26;
+    background-color: rgba(228,77, 38, 0.15);
+}
+.menu-css:hover{
+    border-top: 5px solid #0070bb;
+    background-color: rgba(000,112, 192, 0.15);
+}
+.menu-js:hover{
+    border-top: 5px solid #ffbf00;
+    background-color: #ffbf00;
+}
+.menu-html .submenu {
+    background-color: royalblue;
+}
+.menu-css .submenu{
+    background-color:gray;
+}
+.menu-js .submenu{
+    background-color: #ffbf00;
+}
+.submenu li:hover a{
+    font-weight: bold;
+}
+.menu-html .submenu li:hover{
+    background-color: rgb(000, 115,200);
+
+}
+.menu-css .submenu li:hover{
+    background-color: rgb(000, 115,200);
+
+}
+/* meunu therefore appears when checkbox has been checked*/
+nav input[type=checkbox]:checked + ul{
+    display: block;
+}
+
+/* small screen*/
+@media screen and (max-width:901px) {
+    .menu-mobile{
+        display: block;
+        color:#fff;
+       background-color: rgba(000, 115,200, 0.97) ;
+       padding: 12px 0px;
+       text-align: center;
+    }
+
+    nav ul{
+        display: none;
+    }
+    nav ul li , nav li a{
+        width: 100%;
+        text-align: center;
+    }
+    nav ul li a, nav  ul li:hover a{
+        padding: 10px 0px;
+    }
+    nav li:hover .submenu{
+display: block;
+position: static;
+    }
+}
+

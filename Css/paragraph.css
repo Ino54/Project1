@@ -1,0 +1,28 @@
+article p {
+    text-align: justify;
+    letter-spacing: 2px;
+    border-radius: 15px;
+    border: 2px rgb(55, 32, 187) solid;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    color: black;
+    font-style: inherit;
+    font-size: 18px;
+}
+
+.content p {
+    text-align: justify;
+    letter-spacing: 2px;
+    font-family: cursive;
+    color: blue;
+    font-style: italic;
+    font-size: 15px;
+}
+
+.content aside h1 {
+    color: blue;
+}
+.content aside p {
+    color: black;
+    text-justify: auto;
+    text-align: center;
+}
