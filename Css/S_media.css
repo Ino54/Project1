@@ -1,0 +1,37 @@
+figure {
+    margin: auto;
+  }
+  
+  figcaption {
+    background-color: black;
+    color: white;
+    font-style: inherit;
+    padding: 1px;
+    text-align: center;
+  }
+  
+  .fa {
+    padding: 5px;
+    font-size: 10px;
+    width: 10px;
+    text-align: center;
+    text-decoration: none;
+    margin: 1px 1px;
+  }
+      
+
+.fa:hover {
+    opacity: 0.3;
+}
+
+.fa-instagram {
+  background:crimson;
+  color: white;
+  
+}
+
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }

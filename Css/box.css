@@ -1,0 +1,56 @@
+.body {
+    background-color: silver;
+}
+.box {
+    /*flexbox*/
+    display: flex;
+    align-items: top;
+    justify-content: stretch;
+    border: 1px solid red;
+    background-color: rgba(244, 96, 96, 0.288);
+}
+
+.sidebar {
+    grid-area: sd;
+}
+
+.content {
+    grid-area: main;
+}
+
+.footer {
+    grid-area: ft;
+}
+/* hover: select links on mouse over ,active select all the active link*/
+a:link,
+a:visited {
+    padding: 14px 10px;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+}
+/* hover: select links on mouse over ,active select all the active link*/
+a:hover,
+a:active {
+    background-color: none;
+}
+
+/*large Screen*/
+@media (min-width: 901px) {
+    .container {
+        display: grid;
+        width: 100%;
+        height: 100%;
+        margin: auto;
+        margin-top: 0px;
+
+        /*setup rows and columns*/
+        grid-template-columns: 300px 300px 1px;
+        grid-template-rows: 250px 600px 1fr;
+        grid-template-areas:
+            "hd hd hd hd hd hd hd "
+            "sd main main main main main main "
+            "ft ft ft ft ft ft ft";
+        border: 2px solid red;
+    }
+}
