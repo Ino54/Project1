@@ -26,3 +26,14 @@ article p {
     text-justify: auto;
     text-align: center;
 }
+button {
+    background-color: brown;
+    border: none;
+    padding: 7px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: none;
+    cursor: pointer;
+  }
