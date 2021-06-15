@@ -8,11 +8,11 @@
 
     /*setup rows and columns*/
     grid-template-columns: 850px;
-    grid-template-rows: 200px 600px 1fr;
+    grid-template-rows: 100px 800px 1fr;
     grid-auto-rows: 100px 500px;
     grid-template-areas:
-        "hd  "
-        "sd "
+        "hd "
+        "sd"
         "main "
         "ft";
     border: 0px solid rebeccapurple;
