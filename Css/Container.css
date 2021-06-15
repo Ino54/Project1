@@ -16,3 +16,20 @@
         "ft";
     border: 0px solid rebeccapurple;
 }
+
+@media only screen  and (min-width: 360px) {
+    nav {
+        width: 100vw;
+    }
+    .container {
+        width: 100vw;
+        height: 100vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: 10vh 70vh 10vh 10vh;
+        grid-template-areas:
+        "hd"
+        "sd"
+        "main"
+        "ft";
+    }
+}
