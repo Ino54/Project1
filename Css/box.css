@@ -36,7 +36,7 @@ a:active {
 }
 
 /*large Screen*/
-@media screen and (max-width: 980px) {
+@media screen and (min-width: 680px) {
     .container {
         display: grid;
         width: 100%;
