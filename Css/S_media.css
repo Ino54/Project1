@@ -1,42 +1,39 @@
 figure {
-    margin: auto;
-  }
-  
-  figcaption {
-    background-color:rgb(194, 122, 41);
-    color: white;
-    font-style: inherit;
-    padding: 0px;
-    text-align: center;
-  }
-  
-  .fa {
-    padding: 5px;
-    font-size: 10px;
-    width: 5px;
-    text-align: center;
-    text-decoration: none;
-    margin: 1px 1px;
-  }
-      
+  margin: auto;
+}
+
+figcaption {
+  background-color: rgb(194, 122, 41);
+  color: white;
+  font-style: inherit;
+  padding: 0px;
+  text-align: center;
+}
+
+.fa {
+  padding: 5px;
+  font-size: 10px;
+  width: 5px;
+  text-align: center;
+  text-decoration: none;
+  margin: 1px 1px;
+}
 
 .fa:hover {
-    opacity: 0.3;
+  opacity: 0.3;
 }
 
 .fa-instagram {
-  background:crimson;
+  background: crimson;
   color: white;
-  
 }
 
-
 .fa-linkedin {
-    background: #007bb5;
-    color: white;
-  }
+  background: #007bb5;
+  color: white;
+}
 
-  .fa-facebook {
-    background: #007bb5;
-    color: white;
-  }
+.fa-facebook {
+  background: #007bb5;
+  color: white;
+}
